@@ -1,9 +1,15 @@
-var character = document.getElementById("character");
-var game = document.getElementById("game");
-var interval;
-var both = 0;
-var counter = 0;
-var currentBlocks = [];
+let startButton = document.querySelector(".start");
+
+startButton.addEventListener("click", startGame);
+
+function startGame() {
+
+    let character = document.getElementById("character");
+let game = document.getElementById("game");
+let interval;
+let both = 0;
+let counter = 0;
+let currentBlocks = [];
 
 function moveLeft(){
     var left = parseInt(window.getComputedStyle(character).getPropertyValue("left"));
@@ -92,3 +98,5 @@ var blocks = setInterval(function(){
         character.style.top = characterTop - 0.5 + "px";
     }
 },1);
+
+}
