@@ -1,0 +1,38 @@
+body {
+    font-family: 'Aboreto', cursive;
+        text-align: center;
+}
+
+#board {
+     
+    height: 420px;
+    width: 490px;
+    background-color:darkcyan;
+    border: 10px double lightseagreen;
+    border-radius: 5%;
+    margin: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-content: space-between;
+    transition: 2s;
+}
+
+.tile {
+    height: 55px;
+    width: 55px;
+    margin: 5px;
+transition: .5s;
+    /* Circle */
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.blue-piece {
+    background-color: #343C5C;
+}
+
+.yellow-piece {
+    background-color: #FBEE64;
+}
